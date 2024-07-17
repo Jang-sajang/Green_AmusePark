@@ -1,9 +1,14 @@
 *{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;
 list-style: none;}
-
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
  .logo{
   position: relative;
-  top: 10px; padding-left: 50px;
+  top: 10px; padding-left: 30px;
 
 }
 
@@ -13,6 +18,8 @@ ul li{
 a {
   text-decoration: none;
   color:white;
+  font-family: 'ONE-Mobile-POP';
+  
 }
 /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
 menu박스 가운데정렬, 글자가운데 정렬 */
@@ -66,3 +73,4 @@ menu박스 가운데정렬, 글자가운데 정렬 */
   object-fit: cover; 
   
 }
+
