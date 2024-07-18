@@ -6,11 +6,14 @@ list-style: none;}
   font-weight: 400;
   font-style: normal;
 }
+
  .logo{
   position: relative;
   top: 10px; padding-left: 30px;
 
 }
+
+/* 네비 */
 
 ul li{
   list-style: none;
@@ -21,8 +24,7 @@ a {
   font-family: 'ONE-Mobile-POP';
   
 }
-/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
-menu박스 가운데정렬, 글자가운데 정렬 */
+
 #menu {
   font:16px "malgun gothic";
   width:700px;
@@ -57,6 +59,8 @@ menu박스 가운데정렬, 글자가운데 정렬 */
   }
 
 
+/* 메인 비디오 */
+  
 .bg-video {
   position: absolute;
   top: 0;
@@ -72,5 +76,95 @@ menu박스 가운데정렬, 글자가운데 정렬 */
   width: 100%;
   object-fit: cover; 
   
+}
+
+/* 할인 혜택 */
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top:1000px;
+  text-align: center;
+}
+
+.card{
+  box-shadow: 12px 12px 6px #888888;
+  display:inline-block;
+  width:300px;
+  border:1px solid black;
+  margin:20px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.card:hover{
+  box-shadow: 5px 5px 2px #888888;
+  opacity: 0.8;
+  margin-left:23px;
+  margin-right:17px;
+}
+.card:active{
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 1px 1px 1px #888888;
+}
+.inner-card{
+  padding:20px;
+}
+.text_tag{
+  color:green;
+}
+.text_ago{
+  color:grey;
+  font-size:10px;
+  padding:5px;
+}
+.divide{
+  color:grey;
+}
+.bottom_part{
+  height:40px;
+}
+.left_part{
+  float:left;
+}
+.right_bubble{
+  border-radius: 20px;
+  width:40px;
+  height:40px;
+  background-color:	#D3D3D3;
+  float:right;
+  box-shadow: 3px 3px 3px #888888;
+}
+.bubble_text{
+  margin-top:10px;
+  font-size:15px;
+}
+.cards_container{
+  margin:;
+}
+.title{
+  margin-top:90px;
+  font-size:40px;
+}
+.divide_line{
+  color:green;
+  font-size:20px;
+}
+.subtitle{
+  font-size:20px;
+  color:black;
+  margin:10px;
+  margin-bottom:70px;
+  display:inline-block;
+  cursor:pointer;
+  transition:all .3s;
+}
+.subtitle:hover{
+  color:grey;
+}
+.subtitle:active{
+  transform:translateX(1px) translateY(1px);
+  opacity: 0.8
 }
 
