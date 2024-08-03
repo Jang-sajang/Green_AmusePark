@@ -6,20 +6,49 @@
     <title>attraction</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
     <style>
-      #contain {
-        margin: 0px;
+      .contain {
+        margin: 0 auto;
         padding: 0px;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 60px; 
+    max-width: 950px;
       }
-      img {
+      .picture{
+        display: inline-block;
+        width: 409px;
+        border:3px dashed rgb(228, 181, 28);
+        margin:20px;
+  cursor: pointer;
+  transition: all .4s;
+      }
+.picture:hover{
+  box-shadow: 5px 5px 2px #7c7878;
+  opacity: 0.8;
+  margin-left:23px;
+  margin-right:17px;
+}
+.picture:active{
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 1px 1px 1px #dd260e;
+}
+h2{
+  padding-left: 20px;
+  color:#9d4ac4 ;
+}
+      #round {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
         width: 403px;
         height: 253px;
-        float: left;
         margin-right: 20px;
       }
-      #detail > ul {
+
+      .detail > ul {
         list-style: none;
+      padding-left: 20px;
       }
-      #detail > ul > li {
+      .detail > ul > li {
         font-size: 20px;
         line-height: 24px;
       }
@@ -71,12 +100,13 @@
       </div>
     </div> -->
 
-    <div id="contain">
-      <div id="picture">
-        <h3>Toy Story Land</h3>
-        <img src="../img/토이.jpg" alt="토이" />
-      </div>
-      <div id="detail">
+    <div class="contain">
+      <article>
+      <div class="picture">
+        <h2>Toy Story Land</h2>
+        <img id="round" src="../img/토이.jpg" alt="토이" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -100,13 +130,14 @@
           <br />
         </ul>
       </div>
-    </div>
-    <div id="container">
-      <div id="picture">
-        <h3>슬링키 지그재그 스핀</h3>
-        <img src="../img/강아지.jpg" alt="강아지" />
       </div>
-      <div id="detail">
+      </article>
+      <article>
+      <div class="picture">
+        <h2>슬링키 지그재그 스핀</h2>
+        <img id="round" src="../img/강아지.jpg" alt="강아지" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -131,12 +162,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>덤보와 하늘로 슝슝</h3>
-        <img src="../img/덤보.jpg" alt="덤보" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>덤보와 하늘로 슝슝</h2>
+        <img id="round" src="../img/덤보.jpg" alt="덤보" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -161,12 +193,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>Dumbo the Flying Elephant</h3>
-        <img src="../img/도날드.jpg" alt="도날드" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>도날드덕과 엉망진창 연주회</h2>
+        <img id="round" src="../img/도날드.jpg" alt="도날드" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -185,18 +218,19 @@
           <br />
           <li>
             <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
+            <span>연주회</span>
           </li>
           <br />
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>스플래시 마운틴</h3>
-        <img src="../img/후룸.jpg" alt="후룸" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>스플래시 마운틴</h2>
+        <img id="round" src="../img/후룸.jpg" alt="후룸" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -221,12 +255,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>미키마우스 관람차</h3>
-        <img src="../img/미키.jpg" alt="미키" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>미키마우스 관람차</h2>
+        <img id="round" src="../img/미키.jpg" alt="미키" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -251,12 +286,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>스타워즈 저항군에 합류해라</h3>
-        <img src="../img/우주.jpg" alt="우주" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>스타워즈 저항군에 합류해라</h2>
+        <img id="round" src="../img/우주.jpg" alt="우주" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -281,12 +317,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>인어공주와 바닷속 여행</h3>
-        <img src="../img/에리얼.jpg" alt="에리얼" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>인어공주와 바닷속 여행</h2>
+        <img id="round" src="../img/에리얼.jpg" alt="에리얼" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -311,12 +348,13 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>트램타고 몬스터 찾기</h3>
-        <img src="../img/몬스터.jpg" alt="몬스터" />
-      </div>
-      <div id="detail">
+    </article>
+    <article>
+      <div class="picture">
+        <h2>트램타고 몬스터 찾기</h2>
+        <img id="round" src="../img/몬스터.jpg" alt="몬스터" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -341,12 +379,44 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>Dumbo the Flying Elephant</h3>
-        <img src="../img/워터.jpg" alt="워터" />
+    </article>
+    <article>
+      <div class="picture">
+        <h2>워터 스플래쉬</h2>
+        <img id="round" src="../img/워터.jpg" alt="워터" />
+     
+      <div class="detail">
+        <ul>
+          <li>
+            <strong>위치</strong> <br />
+            <span>Magic Kingdom Park</span>
+          </li>
+          <br />
+          <li>
+            <strong>이용 가능 신장</strong> <br />
+            <span>120cm 이상</span>
+          </li>
+          <br />
+          <li>
+            <strong>대상 연령</strong> <br />
+            <span>만 7세 이상</span>
+          </li>
+          <br />
+          <li>
+            <strong>놀이기구 유형</strong> <br />
+            <span>고속 라이드, 낙하 </span>
+          </li>
+          <br />
+        </ul>
       </div>
-      <div id="detail">
+    </div>
+    </article>
+    <article>
+      <div class="picture">
+        <h2>피터팬과 비행을</h2>
+        <img id="round" src="../img/피터팬1.jpg" alt="피터팬" />
+      
+      <div class="detail">
         <ul>
           <li>
             <strong>위치</strong> <br />
@@ -371,35 +441,8 @@
         </ul>
       </div>
     </div>
-    <div id="container">
-      <div id="picture">
-        <h3>피터팬과 비행을</h3>
-        <img src="../img/피터팬1.jpg" alt="피터팬" />
-      </div>
-      <div id="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
-      </div>
-    </div>
+  </div>
+    </article>
+  </div>
   </body>
 </html>
