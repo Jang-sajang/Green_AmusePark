@@ -6,6 +6,17 @@
     <title>attraction</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
     <style>
+      #header{
+        background-color: #1a0b44;
+        height: 75px;
+      }
+      #miki{
+        top: -62px;
+      }
+      #box1{
+        background-color: antiquewhite;
+        height: 145px;
+      }
       .contain {
         margin: 0 auto;
         padding: 0px;
@@ -16,15 +27,16 @@
       }
       .picture{
         display: inline-block;
+        border-radius: 25px;
         width: 409px;
         border:3px dashed rgb(228, 181, 28);
         margin:20px;
-  cursor: pointer;
-  transition: all .4s;
+        cursor: pointer;
+        transition: all .4s;
       }
 .picture:hover{
   box-shadow: 5px 5px 2px #7c7878;
-  opacity: 0.8;
+ 
   margin-left:23px;
   margin-right:17px;
 }
@@ -33,8 +45,8 @@
   box-shadow: 1px 1px 1px #dd260e;
 }
 h2{
-  padding-left: 20px;
-  color:#9d4ac4 ;
+  padding: 5px 20px;
+  color:#1a0b44 ;
 }
       #round {
         border-top-left-radius: 50px;
@@ -42,6 +54,7 @@ h2{
         width: 403px;
         height: 253px;
         margin-right: 20px;
+        margin-bottom: 5px;
       }
 
       .detail > ul {
@@ -49,13 +62,18 @@ h2{
       padding-left: 20px;
       }
       .detail > ul > li {
-        font-size: 20px;
         line-height: 24px;
+      }
+      .detail > ul > li > strong {
+        font-size: 20px;
+      }
+      .detail > ul > li > span{
+        font-size: 17px;
       }
     </style>
   </head>
   <body>
-    <!-- <div id="header">
+    <div id="header">
       <div class="logo">
         <a href="#"><img src="../image/logo3.png" width="200" /></a>
       </div>
@@ -93,13 +111,15 @@ h2{
               <li><a href="#">SUB_MENU3</a></li>
             </ul>
           </li>
-          <li>
+          <li id="miki">
             <a href="#"><img src="../image/login.png" width="65" /></a>
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
+<div id="box1">
 
+</div>
     <div class="contain">
       <article>
       <div class="picture">
@@ -110,7 +130,7 @@ h2{
         <ul>
           <li>
             <strong>위치</strong> <br />
-            <span>Hollywood Studios</span>
+            <span>Worlds of Pixar</span>
           </li>
           <br />
           <li>
@@ -234,7 +254,7 @@ h2{
         <ul>
           <li>
             <strong>위치</strong> <br />
-            <span>Critter Country</span>
+            <span>Hollywood Studios</span>
           </li>
           <br />
           <li>
@@ -296,7 +316,7 @@ h2{
         <ul>
           <li>
             <strong>위치</strong> <br />
-            <span>discovery land</span>
+            <span>Hollywood Studios</span>
           </li>
           <br />
           <li>
@@ -358,7 +378,7 @@ h2{
         <ul>
           <li>
             <strong>위치</strong> <br />
-            <span>Tomorrow Land</span>
+            <span>Worlds of Pixar</span>
           </li>
           <br />
           <li>
@@ -389,7 +409,7 @@ h2{
         <ul>
           <li>
             <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
+            <span>Worlds of Pixar</span>
           </li>
           <br />
           <li>
