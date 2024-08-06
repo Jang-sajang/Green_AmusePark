@@ -1,470 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>attraction</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <style>
-      #header{
-        background-color: #1a0b44;
-        height: 75px;
-      }
-      #miki{
-        top: -62px;
-      }
-      #box1{
-        background-color: antiquewhite;
-        height: 145px;
-      }
-      .contain {
-        margin: 0 auto;
-        padding: 0px;
-        display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px 60px; 
-    max-width: 950px;
-      }
-      .picture{
-        display: inline-block;
-        border-radius: 25px;
-        width: 409px;
-        border:3px dashed rgb(235, 158, 17);
-        margin:20px;
-        cursor: pointer;
-        transition: all .4s;
-      }
-.picture:hover{
-  box-shadow: 5px 5px 2px #7c7878;
- 
-  margin-left:23px;
-  margin-right:17px;
-}
-.picture:active{
-  transform: translateX(2px) translateY(2px);
-  box-shadow: 1px 1px 1px #dd260e;
-}
-h2{
-  padding: 5px 20px;
-  color:#1a0b44 ;
-}
-      #round {
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        width: 403px;
-        height: 253px;
-        margin-right: 20px;
-        margin-bottom: 5px;
-      }
 
-      .detail > ul {
-        list-style: none;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>attraction</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+  <style>
+    #header {
+      background-color: #1a0b44;
+      height: 75px;
+    }
+
+    #miki {
+      top: -62px;
+    }
+
+    #menu > ul > li > ul > li:hover {
+  background-color: rgb(157, 134, 241, 0);
+  transition: ease 1s;
+  }
+
+    #box1 {
+      background-color: rgb(235, 158, 17);
+      height: 145px;
+        }
+
+    #box1 > h2{
+      color: white;
+      text-align: center;
+      padding-top: 55px;
+    }
+
+    .contain {
+      margin: 0 auto;
+      padding: 0px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px 60px;
+      max-width: 950px;
+    }
+
+    .picture {
+      display: inline-block;
+      border-radius: 25px;
+      width: 409px;
+      border: 3px dashed rgb(235, 158, 17);
+      margin: 20px;
+      cursor: pointer;
+      transition: all .4s;
+      position: relative;
+    }
+
+        .picture:active {
+      transform: translateX(3px) translateY(3px);
+      box-shadow: 3px 3px 3px #7b7c76;
+    }
+
+
+    h2 {
+      padding: 5px 20px;
+      color: #1a0b44;
+    }
+
+    #round {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 10px;
+      width: 403px;
+      height: 253px;
+      margin-right: 20px;
+      margin-bottom: 5px;
+    }
+
+    .detail>ul {
+      list-style: none;
       padding-left: 20px;
-      }
-      .detail > ul > li {
-        line-height: 24px;
-      }
-      .detail > ul > li > strong {
-        color: rgb(235, 158, 17);
-        font-size: 20px;
-      }
-      .detail > ul > li > span{
-        color: #1a0b44;
-        font-size: 17px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="header">
-      <div class="logo">
-        <a href="#"><img src="../image/logo3.png" width="200" /></a>
-      </div>
-      <div id="menu">
-        <ul>
-          <li>
-            <a href="#">즐길거리</a>
-            <ul>
-              <li><a href="#">SUB_MENU</a></li>
-              <li><a href="#">SUB_MENU2</a></li>
-              <li><a href="#">SUB_MENU3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">요금/우대혜택</a>
-            <ul>
-              <li><a href="#">SUB_MENU</a></li>
-              <li><a href="#">SUB_MENU2</a></li>
-              <li><a href="#">SUB_MENU3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">이용가이드</a>
-            <ul>
-              <li><a href="#">SUB_MENU</a></li>
-              <li><a href="#">SUB_MENU2</a></li>
-              <li><a href="#">SUB_MENU3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">소통서비스</a>
-            <ul>
-              <li><a href="#">SUB_MENU</a></li>
-              <li><a href="#">SUB_MENU2</a></li>
-              <li><a href="#">SUB_MENU3</a></li>
-            </ul>
-          </li>
-          <li id="miki">
-            <a href="#"><img src="../image/login.png" width="65" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-<div id="box1">
+    }
 
-</div>
-    <div class="contain">
-      <article>
+    .detail>ul>li {
+      line-height: 24px;
+    }
+
+    .detail>ul>li>strong {
+      color: rgb(235, 158, 17);
+      font-size: 20px;
+    }
+
+    .detail>ul>li>span {
+      color: #1a0b44;
+      font-size: 17px;
+    }
+
+
+    .detail {
+      height: 20px;
+    }
+
+    .detail ul {
+      opacity: 0;
+      position: absolute;
+      transform: translateY(-200px);
+    }
+
+    .picture:hover .detail {
+      animation: ani1 1s forwards;
+    }
+
+    .picture:hover .detail ul {
+      animation: ani2 1s forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes ani1 {
+      0% {
+        height: 20px;
+      }
+
+      100% {
+        height: 280px;
+      }
+    }
+
+    @keyframes ani2 {
+      0% {
+        opacity: 0;
+        transform: translateY(-200px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div class="logo">
+      <a href="#"><img src="../image/logo3.png" width="200" /></a>
+    </div>
+    <div id="menu">
+      <ul>
+        <li>
+          <a href="#">즐길거리</a>
+          <ul>
+            <li><a href="#">SUB_MENU</a></li>
+            <li><a href="#">SUB_MENU2</a></li>
+            <li><a href="#">SUB_MENU3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">요금/우대혜택</a>
+          <ul>
+            <li><a href="#">SUB_MENU</a></li>
+            <li><a href="#">SUB_MENU2</a></li>
+            <li><a href="#">SUB_MENU3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">이용가이드</a>
+          <ul>
+            <li><a href="#">SUB_MENU</a></li>
+            <li><a href="#">SUB_MENU2</a></li>
+            <li><a href="#">SUB_MENU3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">소통서비스</a>
+          <ul>
+            <li><a href="#">SUB_MENU</a></li>
+            <li><a href="#">SUB_MENU2</a></li>
+            <li><a href="#">SUB_MENU3</a></li>
+          </ul>
+        </li>
+        <li id="miki">
+          <a href="#"><img src="../image/login.png" width="65" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="box1">
+<h2>원하는 놀이기구를 터치해보세요</h2>
+  </div>
+  <div class="contain">
+    <article>
       <div class="picture">
         <h2>Toy Story Land</h2>
         <img id="round" src="../img/토이.jpg" alt="토이" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Worlds of Pixar</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전, 4D 아케이드</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Worlds of Pixar</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드, 회전, 4D 아케이드</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-      </div>
-      </article>
-      <article>
+    </article>
+
+    <article>
       <div class="picture">
         <h2>슬링키 지그재그 스핀</h2>
         <img id="round" src="../img/강아지.jpg" alt="강아지" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Worlds of Pixar</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>만 1세 이상</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Worlds of Pixar</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>만 1세 이상</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드, 회전</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
+
     <article>
       <div class="picture">
         <h2>덤보와 하늘로 슝슝</h2>
         <img id="round" src="../img/덤보.jpg" alt="덤보" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Magic Kingdom Park</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드, 회전</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>도날드덕과 엉망진창 연주회</h2>
         <img id="round" src="../img/도날드.jpg" alt="도날드" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>연주회</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Magic Kingdom Park</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>연주회</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>스플래시 마운틴</h2>
         <img id="round" src="../img/후룸.jpg" alt="후룸" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Hollywood Studios</span>
-          </li>
-          <br />
-          <li>
-            <strong>소요시간</strong> <br />
-            <span>약 10분</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>어두운 동굴, 스피드, 스릴</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Hollywood Studios</span>
+            </li>
+            <br />
+            <li>
+              <strong>소요시간</strong> <br />
+              <span>약 10분</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>어두운 동굴, 스피드, 스릴</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>미키마우스 관람차</h2>
         <img id="round" src="../img/미키.jpg" alt="미키" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Magic Kingdom Park</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드, 회전</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>스타워즈 저항군에 합류해라</h2>
         <img id="round" src="../img/우주.jpg" alt="우주" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Hollywood Studios</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>120cm 이상</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>만 7세 이상</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>낙하, 고속 라이드, 어두움, 큰 음향</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Hollywood Studios</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>120cm 이상</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>만 7세 이상</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>낙하, 고속 라이드, 어두움, 큰 음향</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>인어공주와 바닷속 여행</h2>
         <img id="round" src="../img/에리얼.jpg" alt="에리얼" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Magic Kingdom Park</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>트램타고 몬스터 찾기</h2>
         <img id="round" src="../img/몬스터.jpg" alt="몬스터" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Worlds of Pixar</span>
-          </li>
-          <br />
-          <li>
-            <strong>소요 시간</strong> <br />
-            <span>약 4분</span>
-          </li>
-          <br />
-          <li>
-            <strong>정원</strong> <br />
-            <span>9명(1열에 성인2 7세미만 아동 1명까지)</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>어두운 실내, 큰 소리, 저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Worlds of Pixar</span>
+            </li>
+            <br />
+            <li>
+              <strong>소요 시간</strong> <br />
+              <span>약 4분</span>
+            </li>
+            <br />
+            <li>
+              <strong>정원</strong> <br />
+              <span>9명(1열에 성인2 7세미만 아동 1명까지)</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>어두운 실내, 큰 소리, 저속 라이드, 회전</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>워터 스플래쉬</h2>
         <img id="round" src="../img/워터.jpg" alt="워터" />
-     
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Worlds of Pixar</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>120cm 이상</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>만 7세 이상</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>고속 라이드, 낙하 </span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Worlds of Pixar</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>120cm 이상</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>만 7세 이상</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>고속 라이드, 낙하 </span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
     </article>
     <article>
       <div class="picture">
         <h2>피터팬과 비행을</h2>
         <img id="round" src="../img/피터팬1.jpg" alt="피터팬" />
-      
-      <div class="detail">
-        <ul>
-          <li>
-            <strong>위치</strong> <br />
-            <span>Magic Kingdom Park</span>
-          </li>
-          <br />
-          <li>
-            <strong>이용 가능 신장</strong> <br />
-            <span>전체</span>
-          </li>
-          <br />
-          <li>
-            <strong>대상 연령</strong> <br />
-            <span>모든 연령</span>
-          </li>
-          <br />
-          <li>
-            <strong>놀이기구 유형</strong> <br />
-            <span>저속 라이드, 회전</span>
-          </li>
-          <br />
-        </ul>
+
+        <div class="detail">
+          <ul>
+            <li>
+              <strong>위치</strong> <br />
+              <span>Magic Kingdom Park</span>
+            </li>
+            <br />
+            <li>
+              <strong>이용 가능 신장</strong> <br />
+              <span>전체</span>
+            </li>
+            <br />
+            <li>
+              <strong>대상 연령</strong> <br />
+              <span>모든 연령</span>
+            </li>
+            <br />
+            <li>
+              <strong>놀이기구 유형</strong> <br />
+              <span>저속 라이드, 회전</span>
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-    </div>
   </div>
-    </article>
+  </article>
   </div>
-  </body>
+</body>
+
 </html>
